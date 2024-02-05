@@ -1,0 +1,2 @@
+# SeamCarving
+Projet S2
