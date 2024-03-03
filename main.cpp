@@ -1,6 +1,7 @@
 #include <Imagine/Images.h>
 #include <Imagine/Graphics.h>
 #include <iostream>
+#include "Images_av.h"
 
 using namespace Imagine;
 
@@ -18,6 +19,9 @@ int main(){
     int const imgw = img.width();
     int const imgh = img.height();
     openWindow(imgw, imgh);
+    Images_av imga(img,imgh,imgw);
+    imga.set_Energie();
+    imga.display_Energie();
     display(img);
     endGraphics();
     return 0;
