@@ -22,7 +22,6 @@ int main(){
     Images_av imga(img,imgh,imgw);
     imga.set_Energie();
     imga.display_Energie();
-    display(img);
     endGraphics();
     return 0;
 }
