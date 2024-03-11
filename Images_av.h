@@ -18,6 +18,6 @@ public:
     void set_Energie();
     void set_Energie(int x, byte value);
     void display_Energie();
-    byte get_Energie(int x) const;
+    byte get_Energie(int x, int y) const;
 };
 

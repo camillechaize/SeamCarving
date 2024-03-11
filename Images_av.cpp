@@ -1,7 +1,7 @@
 #include "Images_av.h"
 
-byte Images_av::get_Energie(int x) const{
-    return E[x];
+byte Images_av::get_Energie(int x , int y) const{
+    return E[y*width + x];
 }
 
 void Images_av::set_Energie(int x, byte value){
@@ -42,7 +42,6 @@ void Images_av::set_Energie(){
         Value2 = abs(img(i,height-1)-img(i,height-2));
         set_Energie(i +(height -1)*width,byte(Value1 + Value2/2));
     }
-    cout << 1 << endl;
     Value1 = abs(img(1,0)-img(0,0));
     Value2 = abs(img(0,1)-img(0,0));
     set_Energie(0,byte(Value1 + Value2));
@@ -58,5 +57,5 @@ void Images_av::set_Energie(){
 }
 
 void Images_av::display_Energie(){
-    putGreyImage(0,0,E,width,height);
+    putGreyImage(0,0,E,width,height,false,1);
 }
