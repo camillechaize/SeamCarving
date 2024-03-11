@@ -14,7 +14,7 @@ Img Image_energy(Img I){
 
 int main(){
     Img img;
-    if (!load(img,srcPath("Image_test.jpg"))) // Stop si l'image n'est pas chargee
+    if (!load(img,srcPath("projet_test.png"))) // Stop si l'image n'est pas chargee
         return 0;
     int const imgw = img.width();
     int const imgh = img.height();
